@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- ビューポートの設定：レスポンシブデザインのため -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルメモ帳</title>
+    <!-- CSSファイルのリンク -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- メインのコンテナ -->
+    <div class="container">
+        <!-- アプリケーションのタイトル -->
+        <h1>シンプルメモ帳</h1>
+        <!-- 現在のファイル名を表示する要素 -->
+        <p id="currentFileName">新規ファイル（未保存）</p>
+        <!-- ボタングループ -->
+        <div class="button-group">
+            <!-- 各機能のボタン -->
+            <button id="newFile">新規ファイル</button>
+            <button id="openFile">ファイルを開く</button>
+            <button id="saveFile">保存</button>
+            <button id="saveAsFile">名前を付けて保存</button>
+        </div>
+        <!-- テキスト入力エリア -->
+        <textarea id="memoArea" rows="20" cols="50"></textarea>
+    </div>
+
+    <!-- JavaScriptファイルの読み込み（モジュールとして） -->
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
